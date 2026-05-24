@@ -579,6 +579,32 @@ export default function Home() {
               Reach out below if you have NEWS tokens and need to swap them for the new PRESS tokens. They&apos;re coming soon, so get in touch.
             </p>
 
+            {/* YouTube embed */}
+            <div style={{
+              position: "relative",
+              width: "100%",
+              paddingBottom: "56.25%",
+              marginBottom: 36,
+              borderRadius: 8,
+              overflow: "hidden",
+              border: "1px solid rgba(255,255,255,0.08)",
+            }}>
+              <iframe
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  border: "none",
+                }}
+                src="https://www.youtube.com/embed/YkrwIll9T2Y"
+                title="PressCoin — Token Swap"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+
             {/* Process steps */}
             <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
               {[
