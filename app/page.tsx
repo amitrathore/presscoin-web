@@ -41,7 +41,12 @@ export default function Home() {
         background: "rgba(8,8,8,0.7)",
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <div className="scanbar" style={{ width: 24, height: 3 }} />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo-white.png"
+            alt="PressCoin logo"
+            style={{ width: 32, height: 32, objectFit: "contain" }}
+          />
           <span style={{
             fontFamily: "var(--font-mono)",
             fontWeight: 700,
@@ -91,6 +96,22 @@ export default function Home() {
         textAlign: "center",
         position: "relative",
       }}>
+        {/* Logo */}
+        <div style={{ marginBottom: 28 }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo.png"
+            alt="PressCoin"
+            style={{
+              width: 96,
+              height: 96,
+              objectFit: "contain",
+              filter: "drop-shadow(0 0 32px rgba(255,170,0,0.5))",
+              animation: "driftC 20s ease-in-out infinite alternate",
+            }}
+          />
+        </div>
+
         {/* Top label */}
         <div style={{ marginBottom: 32 }}>
           <span className="pill pill-violet">
@@ -764,7 +785,12 @@ export default function Home() {
           gap: 24,
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <div className="scanbar" style={{ width: 20, height: 2 }} />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo-white.png"
+              alt="PressCoin logo"
+              style={{ width: 28, height: 28, objectFit: "contain" }}
+            />
             <span style={{
               fontFamily: "var(--font-mono)",
               fontWeight: 700,
